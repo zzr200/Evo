@@ -1,4 +1,4 @@
-package com.myjavablog;
+package com.evoTest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
