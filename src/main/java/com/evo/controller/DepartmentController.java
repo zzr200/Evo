@@ -25,5 +25,11 @@ public class DepartmentController {
     public @ResponseBody List<Department> getDepartments(){
         return departmentService.getDepartments();
     }
+    
+    @GetMapping("/dipartimento/{id}")
+    Department one(@PathVariable Long id) {
+      
+      return departmentService.cercaDipartimento(id);
+    }
 
 }

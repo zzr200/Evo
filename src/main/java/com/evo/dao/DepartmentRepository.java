@@ -15,4 +15,5 @@ public interface DepartmentRepository extends JpaRepository<Department, Long>{
     
     @Query("SELECT u FROM Student u WHERE u.name = ?1")
     public Student findStudent(String name);
+    
 }

@@ -1,6 +1,9 @@
 package com.evo.model;
 
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +18,7 @@ public class Department {
     @Column
     private String name;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "department", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Student> studentList=new ArrayList<Student>();
 

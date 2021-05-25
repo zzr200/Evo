@@ -13,4 +13,5 @@ public interface DepartmentService {
     public List<Department> getDepartments();
     public Department findDepartment(String name) throws NotFoundException;
     public Student findStudent(String name);
+	public Department cercaDipartimento(Long id);
 }

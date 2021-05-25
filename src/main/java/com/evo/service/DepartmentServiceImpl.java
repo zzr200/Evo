@@ -39,6 +39,11 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
     
     @Override
+    public Department cercaDipartimento(Long id){
+    	return departmentRepository.findDepartmentById(id);
+    }
+    
+    @Override
     public Student findStudent(String name) {
     	Student stu=departmentRepository.findStudent(name);
     	return stu;

@@ -4,6 +4,8 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.stereotype.Repository;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.annotation.Generated;
 import javax.persistence.*;
 import java.util.Optional;
@@ -22,6 +24,7 @@ public class Student {
     @Column
     private int mobile;
 
+    @JsonBackReference
     @ManyToOne( fetch = FetchType.EAGER)
     @JoinColumn(name = "DEPT_ID", nullable = false)
     private Department department;
