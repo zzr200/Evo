@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Built-By: rocco.demasi
 Build-Jdk: 15.0.1
-Implementation-Title: springboot-jpa-one-to-many-demo
+Implementation-Title: SmartEvo
 Implementation-Version: 0.0.1-SNAPSHOT
-Implementation-Vendor-Id: com.myjavablog
+Implementation-Vendor-Id: com.smartEvo
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
- -starter-parent/springboot-jpa-one-to-many-demo
+ -starter-parent/samrtEvo
 Created-By: Maven Integration for Eclipse
 

@@ -1,8 +1,10 @@
 package com.evo.service;
 
+
 import com.evo.dao.DepartmentRepository;
 import com.evo.exception.NotFoundException;
 import com.evo.model.Department;
+import com.evo.model.Student;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,5 +36,11 @@ public class DepartmentServiceImpl implements DepartmentService {
         //Department department = d.orElseThrow(() -> new NotFoundException("Not found"));
         //Department result = d.get();
         return d;
+    }
+    
+    @Override
+    public Student findStudent(String name) {
+    	Student stu=departmentRepository.findStudent(name);
+    	return stu;
     }
 }

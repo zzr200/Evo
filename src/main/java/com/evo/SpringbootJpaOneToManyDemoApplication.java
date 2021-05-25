@@ -48,22 +48,30 @@ public class SpringbootJpaOneToManyDemoApplication implements CommandLineRunner 
 		//Bi-directional mapping
 		Department department1 = new Department();
 		department1.setName("IT");
+		Department department2 = new Department();
+		department2.setName("AR");
 
 		//Students list
 		Student student = new Student();
 		student.setName("Danny");
-		student.setMobile(33333);
+		student.setMobile(320092345);
 		student.setDepartment(department1);
 		Student student1 = new Student();
 		student1.setName("Mark");
-		student1.setMobile(11111);
+		student1.setMobile(338456723);
 		student1.setDepartment(department1);
+		Student student2= new Student();
+		student2.setName("Beppe");
+		student2.setMobile(330987645);
+		student2.setDepartment(department2);
 
 		department1.setStudentList(Arrays.asList(student,student1));
+		department2.setStudentList(Arrays.asList(student2));
 //		department1.getStudentList().add(student);
 //		department1.getStudentList().add(student1);
 
 		departmentRepository.save(department1);
+		departmentRepository.save(department2);
 		
 //
 //		//Get the list of students from department

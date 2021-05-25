@@ -77,4 +77,14 @@ public class SmartController {
 			return "Error in saving Student ..";
 		}
 	}
+	
+	@RequestMapping(value = "/cercaStudente", method = RequestMethod.GET)
+	public @ResponseBody String findStudent(@RequestParam String StudentName) {
+		log.info("-------Studente + Dipartimento");
+		Student stud=departmentService.findStudent(StudentName);
+		
+		Department dep=stud.getDepartment();
+		String restituzione=stud.getName()+" "+stud.getMobile()+" "+dep.getName();
+		return restituzione;
+	}
 }

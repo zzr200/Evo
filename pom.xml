@@ -8,11 +8,11 @@
 		<version>2.1.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.myjavablog</groupId>
-	<artifactId>springboot-jpa-one-to-many-demo</artifactId>
+	<groupId>com.smartEvo</groupId>
+	<artifactId>samrtEvo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-jpa-one-to-many-demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>SmartEvo</name>
+	<description>progetto SmartEvo</description>
 
 	<properties>
 		<java.version>1.8</java.version>
