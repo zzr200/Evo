@@ -64,9 +64,13 @@ public class SpringbootJpaOneToManyDemoApplication implements CommandLineRunner 
 		student2.setName("Beppe");
 		student2.setMobile(330987645);
 		student2.setDepartment(department2);
+		Student student3= new Student();
+		student3.setName("Ludovica");
+		student3.setMobile(335786543);
+		student3.setDepartment(department2);
 
 		department1.setStudentList(Arrays.asList(student,student1));
-		department2.setStudentList(Arrays.asList(student2));
+		department2.setStudentList(Arrays.asList(student2, student3));
 //		department1.getStudentList().add(student);
 //		department1.getStudentList().add(student1);
 
